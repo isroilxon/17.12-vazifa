@@ -12,10 +12,10 @@ class FirstTableViewCell: UITableViewCell {
     let nick = UILabel()
     let locate = UILabel()
     let post = UIImageView()
-    let like = UIImageView()
-    let write = UIImageView()
-    let send = UIImageView()
-    let save = UIImageView()
+    let like = UIButton()
+    let write = UIButton()
+    let send = UIButton()
+    let save = UIButton()
     let likes = UILabel()
     let comment = UILabel()
 
@@ -55,7 +55,6 @@ class FirstTableViewCell: UITableViewCell {
         post.topAnchor.constraint(equalTo: locate.bottomAnchor, constant: 20).isActive = true
         post.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10).isActive = true
         post.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
-        post.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
         
         like.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(like)
@@ -63,7 +62,7 @@ class FirstTableViewCell: UITableViewCell {
         like.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10).isActive = true
         like.widthAnchor.constraint(equalToConstant: 25).isActive = true
         like.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        like.image = UIImage(systemName: "heart")
+        like.setImage(UIImage(systemName: "heart"), for: .normal)
         
         write.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(write)
@@ -71,7 +70,7 @@ class FirstTableViewCell: UITableViewCell {
         write.leftAnchor.constraint(equalTo: like.rightAnchor, constant: 10).isActive = true
         write.widthAnchor.constraint(equalToConstant: 25).isActive = true
         write.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        write.image = UIImage(systemName: "message")
+        write.setImage(UIImage(systemName: "message"), for: .normal)
         
         send.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(send)
@@ -79,7 +78,7 @@ class FirstTableViewCell: UITableViewCell {
         send.leftAnchor.constraint(equalTo: write.rightAnchor, constant: 10).isActive = true
         send.widthAnchor.constraint(equalToConstant: 25).isActive = true
         send.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        send.image = UIImage(systemName: "location")
+        send.setImage(UIImage(systemName: "location"), for: .normal)
         
         save.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(save)
@@ -87,7 +86,7 @@ class FirstTableViewCell: UITableViewCell {
         save.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
         save.widthAnchor.constraint(equalToConstant: 25).isActive = true
         save.heightAnchor.constraint(equalToConstant: 25).isActive = true
-        save.image = UIImage(systemName: "bookmark")
+        save.setImage(UIImage(systemName: "bookmark"), for: .normal)
         
         likes.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(likes)
@@ -102,6 +101,7 @@ class FirstTableViewCell: UITableViewCell {
         comment.topAnchor.constraint(equalTo: likes.bottomAnchor, constant: 10).isActive = true
         comment.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10).isActive = true
         comment.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
+        comment.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
         comment.numberOfLines = 0
         comment.font = .systemFont(ofSize: 20)
         

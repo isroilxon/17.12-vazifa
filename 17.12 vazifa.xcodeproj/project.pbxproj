@@ -16,6 +16,8 @@
 		042EBAED294E411900731DAA /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EBAEC294E411900731DAA /* FirstTableViewCell.swift */; };
 		042EBAEF294E417600731DAA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EBAEE294E417600731DAA /* FirstViewController.swift */; };
 		042EBAF1294E418D00731DAA /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042EBAF0294E418D00731DAA /* model.swift */; };
+		04FE42E22957714A00A31EC2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE42E12957714A00A31EC2 /* MessageViewController.swift */; };
+		04FE42E42957715C00A31EC2 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE42E32957715C00A31EC2 /* SendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		042EBAEC294E411900731DAA /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		042EBAEE294E417600731DAA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		042EBAF0294E418D00731DAA /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
+		04FE42E12957714A00A31EC2 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MessageViewController.swift; path = "17.12 vazifa/extrapages/MessageViewController.swift"; sourceTree = SOURCE_ROOT; };
+		04FE42E32957715C00A31EC2 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,9 @@
 		042EBAD6294E40DC00731DAA /* 17.12 vazifa */ = {
 			isa = PBXGroup;
 			children = (
+				04FE42E52957717000A31EC2 /* extrapages */,
+				04FE42E02957711A00A31EC2 /* utilities */,
 				042EBAEB294E40FB00731DAA /* program */,
-				042EBAD7294E40DC00731DAA /* AppDelegate.swift */,
-				042EBAD9294E40DC00731DAA /* SceneDelegate.swift */,
-				042EBADB294E40DC00731DAA /* ViewController.swift */,
-				042EBADD294E40DC00731DAA /* Main.storyboard */,
-				042EBAE0294E40E200731DAA /* Assets.xcassets */,
-				042EBAE2294E40E200731DAA /* LaunchScreen.storyboard */,
 				042EBAE5294E40E200731DAA /* Info.plist */,
 			);
 			path = "17.12 vazifa";
@@ -78,10 +78,32 @@
 			isa = PBXGroup;
 			children = (
 				042EBAEE294E417600731DAA /* FirstViewController.swift */,
+				04FE42E32957715C00A31EC2 /* SendViewController.swift */,
+			);
+			path = program;
+			sourceTree = "<group>";
+		};
+		04FE42E02957711A00A31EC2 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				042EBAD7294E40DC00731DAA /* AppDelegate.swift */,
+				042EBAD9294E40DC00731DAA /* SceneDelegate.swift */,
+				042EBADB294E40DC00731DAA /* ViewController.swift */,
+				042EBADD294E40DC00731DAA /* Main.storyboard */,
+				042EBAE0294E40E200731DAA /* Assets.xcassets */,
+				042EBAE2294E40E200731DAA /* LaunchScreen.storyboard */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		04FE42E52957717000A31EC2 /* extrapages */ = {
+			isa = PBXGroup;
+			children = (
+				04FE42E12957714A00A31EC2 /* MessageViewController.swift */,
 				042EBAEC294E411900731DAA /* FirstTableViewCell.swift */,
 				042EBAF0294E418D00731DAA /* model.swift */,
 			);
-			path = program;
+			path = extrapages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +181,10 @@
 				042EBAF1294E418D00731DAA /* model.swift in Sources */,
 				042EBADC294E40DC00731DAA /* ViewController.swift in Sources */,
 				042EBAD8294E40DC00731DAA /* AppDelegate.swift in Sources */,
+				04FE42E42957715C00A31EC2 /* SendViewController.swift in Sources */,
 				042EBAED294E411900731DAA /* FirstTableViewCell.swift in Sources */,
 				042EBADA294E40DC00731DAA /* SceneDelegate.swift in Sources */,
+				04FE42E22957714A00A31EC2 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
