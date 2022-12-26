@@ -24,6 +24,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.like.addTarget(self, action: #selector(likeButton), for: .touchUpInside)
         cell.save.addTarget(self, action: #selector(saveButton), for: .touchUpInside)
         cell.write.addTarget(self, action: #selector(messageButton), for: .touchUpInside)
+        cell.send.addTarget(self, action: #selector(sendButton), for: .touchUpInside)
         
         
         cell.locate.text = model[indexPath.row].locate
@@ -94,6 +95,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let vc = MessageViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @objc func sendButton(){
+        let vc = SendViewController()
+        present(vc, animated: true)    }
     
 
     
