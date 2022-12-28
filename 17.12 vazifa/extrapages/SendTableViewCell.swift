@@ -8,41 +8,41 @@
 import UIKit
 
 class SendTableViewCell: UITableViewCell {
-    let searchImg = UIImageView()
+    let img = UIImageView()
     let label = UILabel()
-    let personImg = UIImageView()
+    let imgCirc = UIImageView()
+    let arr = ["Isroil", "James", "Bahtiyor", "anvar_001"]
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        searchImg.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(searchImg)
-        searchImg.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
-        searchImg.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20).isActive = true
-        searchImg.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        searchImg.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        searchImg.image = UIImage(systemName: "magnifyingglass")
+        img.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(img)
+        img.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        img.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10).isActive = true
+        img.image = UIImage(named: "instagram")
+        img.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        img.widthAnchor.constraint(equalToConstant: 30).isActive = true
         
         label.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(label)
         label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        label.leftAnchor.constraint(equalTo: searchImg.rightAnchor, constant: 20).isActive = true
-        label.font = .systemFont(ofSize: 15)
-        label.text = "search"
-        label.textColor = .gray
+        label.leftAnchor.constraint(equalTo: img.rightAnchor, constant: 10).isActive = true
         
-        personImg.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(personImg)
-        personImg.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
-        personImg.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
-        personImg.image = UIImage(systemName: "person.2")
-        personImg.widthAnchor.constraint(equalToConstant: 20).isActive = true
-        personImg.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        imgCirc.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(imgCirc)
+        imgCirc.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
+        imgCirc.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10).isActive = true
+        imgCirc.image = UIImage(systemName: "circle")
+        imgCirc.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        imgCirc.widthAnchor.constraint(equalToConstant: 30).isActive = true
         
 
     }

@@ -12,4 +12,6 @@ struct Instagram {
     let post: String
     let likes: String
     let comment: String
+    var like: Bool
+    var save: Bool
 }
